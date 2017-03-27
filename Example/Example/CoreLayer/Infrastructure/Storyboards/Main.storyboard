@@ -28,22 +28,15 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="1cZ-0e-yO7"/>
                                 </connections>
                             </webView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5kP-1A-qcj" userLabel="progressView">
-                                <rect key="frame" x="0.0" y="20" width="375" height="2"/>
-                            </progressView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5kP-1A-qcj" firstAttribute="width" secondItem="bto-qS-NNn" secondAttribute="width" id="BKx-bP-W24"/>
-                            <constraint firstItem="5kP-1A-qcj" firstAttribute="centerX" secondItem="bto-qS-NNn" secondAttribute="centerX" id="K2l-Is-J3z"/>
                             <constraint firstAttribute="trailing" secondItem="bto-qS-NNn" secondAttribute="trailing" id="SLi-tE-VHC"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bto-qS-NNn" secondAttribute="bottom" id="gDc-Ya-eaE"/>
                             <constraint firstItem="bto-qS-NNn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="j9c-Lv-qGK"/>
-                            <constraint firstItem="5kP-1A-qcj" firstAttribute="top" secondItem="bto-qS-NNn" secondAttribute="top" id="l2E-jY-Dsa"/>
                             <constraint firstItem="bto-qS-NNn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pUJ-LJ-Ch3"/>
                         </constraints>
                         <connections>
-                            <outlet property="progressView" destination="5kP-1A-qcj" id="kdE-AT-f5a"/>
                             <outlet property="webView" destination="bto-qS-NNn" id="RDP-Lw-JZR"/>
                         </connections>
                     </view>

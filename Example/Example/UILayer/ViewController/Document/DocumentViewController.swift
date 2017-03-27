@@ -37,43 +37,6 @@ class DocumentViewController: UIViewController {
             }
         }
     }
-    
-    // MARK: - Functions
-    func progressBarStart() {
-        self.mainView.progressView.progress = 0.0
-        self.webViewLoaded = false
-        self.interval = Timer.scheduledTimer(timeInterval: 0.01667, target: self, selector: #selector(self.timerCallback), userInfo: nil, repeats: true)
-    }
-    
-    func progressBarFinish() {
-        self.webViewLoaded = true
-    }
-    
-    func timerCallback() {
-        if self.webViewLoaded {
-            if self.mainView.progressView.progress >= 1 {
-                self.mainView.progressView.isHidden = true
-                self.interval.invalidate()
-            } else {
-                self.mainView.progressView.progress += 0.1
-            }
-        } else {
-            self.mainView.progressView.progress += 0.05
-            if self.mainView.progressView.progress >= 0.95 {
-                self.mainView.progressView.progress = 0.95
-            }
-        }
-    }
-}
-
-extension DocumentViewController: UIWebViewDelegate {
-    func webViewDidStartLoad(_ webView: UIWebView) {
-        self.progressBarStart()
-    }
-    
-    func webViewDidFinishLoad(_ webView: UIWebView) {
-        self.progressBarFinish()
-    }
 }
 
 

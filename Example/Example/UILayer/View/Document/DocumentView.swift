@@ -12,5 +12,4 @@ class DocumentView: UIView {
     
     //MARK: - Outlets
     @IBOutlet var webView: UIWebView!
-    @IBOutlet var progressView: UIProgressView!
 }
