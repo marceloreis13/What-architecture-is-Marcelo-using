@@ -22,4 +22,4 @@ O PDF a seguir descreve de forma resumida o modelo de arquitetura e a responsabi
 
 # Detalhamento completo da arquitetura
 
-Link para o documento [iOS-Architecture.pdf]
+Link para o documento [iOS Architecture](iOS-Architecture.pdf)
