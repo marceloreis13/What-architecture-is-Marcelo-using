@@ -18,4 +18,4 @@ Dentre as principais características deste modelo está a separação de re
 através de diferentes componentes ou camadas, visando o maior reaproveitamento do código. 
 O PDF a seguir descreve de forma resumida o modelo de arquitetura e a responsabilidade de cada camada:
 
-![ios-arch](iOS-Architecture.pdf)
+[[iOS-Architecture|iOS-Architecture.pdf]]
